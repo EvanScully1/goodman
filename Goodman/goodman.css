@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;    
+	width: 706px;
+	background-color: white;
+	margin: 15px auto;
+	padding: 10px;
+	text-align: center;
+	padding-left: 375px;
+}
+h1 {
+	font-size: 25px;
+}
+
+h2 { 
+	font-size: 125%;
+	margin-bottom: .5em;
+	clear: both;
+	/* display: none; */
+	margin-in: ;
+}
+#logoTop {
+	height: 65px;
+	margin-bottom: -.25em;
+}
+nav {
+	margin-bottom: 1em;
+	font-size: 22px;
+
+}
+/* The styles for the operation of the 2-tier navigation menu */
+#nav_menu ul {
+	list-style: none;
+	position: relative;    /* So the first submenu can be positioned within the main menu */
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul ul {
+	display: none;         /* Don't display submenu until hover of the li element */
+	position: absolute;
+	top: 100%;             /* Position the submenu at the bottom of the main menu */
+}
+#nav_menu ul ul li {
+	float: none;           /*Display the submenus vertically */
+}
+#nav_menu ul li:hover > ul {
+	display: block;        /* Display the submenu on hover of the li element */
+}
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* The styles for the formatting of the 2-tier navigation menu */
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	width: 176px;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: rgb(184, 0, 0);
+	color: white;
+	opacity: 85%;
+}
+#nav_menu ul li.lastitem a {
+	width: 178px;               /* So the menu fills the 706px width of the page */
+}
+#nav_menu ul li a.current {
+	color: rgb(255, 255, 255);
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: rgba(209, 35, 35, 0.783);
+}
+
+/** Section for homepage's photo grid **/
+/** ********************************* **/
+/* .row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+.column {
+	flex: 50%;
+	padding: 0 4px;
+}
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+} */
